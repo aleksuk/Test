@@ -1,0 +1,8 @@
+<form action="/user" method="POST">
+  <label for="name">Input name</label>
+  <input type="text" name="user[name]" id="name" value="<%= user.name %>" />
+  <input type="submit" />
+</form>  
+
+<a href="/user/<%= user.id %>">Back</a>
+<a class="user-destroy" href="/user/<%= user.id %>">Destroy</a>

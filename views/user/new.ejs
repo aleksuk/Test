@@ -1,0 +1,13 @@
+<form action="/user" method="POST">
+  <label for="name">Input name</label>
+  <input type="text" name="user[name]" id="name" />
+  <input type="submit" />
+</form>
+
+<ul>
+  <% if (typeof error !== 'undefined') { %>
+  <li><%= error.message %></li>
+  <% } %>
+</ul>
+
+<a href="/user">Back</a>
